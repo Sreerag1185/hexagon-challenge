@@ -23,3 +23,8 @@ def print_hex(row,columns):
             print("   ".join(["\___/" for _ in range(col)]))
         else:
             print("   ".join(["\___/" for _ in range(col-1)]))
+
+if __name__ == "__main__":
+    rows = int(input("Rows:"))
+    cols = int(input("Columns:"))
+    print_hex(rows,cols)
